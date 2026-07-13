@@ -5,10 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SELNA | Syrian European Lab for Neuroscience, Psychological Sciences, and AI</title>
     
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
     
+    <!-- AOS Animation Library CSS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -53,14 +56,20 @@
 </head>
 <body class="antialiased bg-white text-brandBlue-900 selection:bg-brandRed-600 selection:text-white transition-colors duration-500 overflow-x-hidden w-full relative">
 
+    <!-- Navigation -->
     <nav class="fixed w-full bg-brandRed-700/95 backdrop-blur-md border-b border-brandRed-800 z-50 transition-all duration-300">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-20 items-center">
-                <div class="flex-shrink-0 flex items-center">
-                    <span class="text-white font-bold text-2xl tracking-widest uppercase lang-en">SELNA<span class="text-brandRed-100 text-sm font-normal block tracking-normal">LAB</span></span>
-                    <span class="text-white font-bold text-2xl tracking-widest hidden lang-ar">سيلنا<span class="text-brandRed-100 text-sm font-normal block tracking-normal">مختبر أبحاث</span></span>
+                <!-- Logo Code with added logo.png -->
+                <div class="flex-shrink-0 flex items-center space-x-3 rtl:space-x-reverse">
+                    <img src="logo.png" alt="SELNA Logo" class="h-12 w-auto object-contain">
+                    <div>
+                        <span class="text-white font-bold text-2xl tracking-widest uppercase lang-en">SELNA<span class="text-brandRed-100 text-sm font-normal block tracking-normal">LAB</span></span>
+                        <span class="text-white font-bold text-2xl tracking-widest hidden lang-ar">سيلنا<span class="text-brandRed-100 text-sm font-normal block tracking-normal">مختبر أبحاث</span></span>
+                    </div>
                 </div>
                 
+                <!-- Links -->
                 <div class="hidden md:flex space-x-8 rtl:space-x-reverse text-sm font-medium tracking-wide">
                     <a href="#vision" class="text-white hover:text-brandRed-100 transition-colors duration-300">
                         <span class="lang-en">Core Vision</span><span class="lang-ar hidden">الرؤية الأساسية</span>
@@ -76,6 +85,7 @@
                     </a>
                 </div>
 
+                <!-- CTA & Language Toggle -->
                 <div class="flex items-center space-x-4 rtl:space-x-reverse">
                     <button onclick="toggleLanguage()" class="text-white text-sm md:text-xl font-bold hover:text-brandRed-100 transition-colors px-3 py-1 border border-white/20 rounded">
                         <span class="lang-en">العربية</span><span class="lang-ar hidden">English</span>
@@ -88,6 +98,7 @@
         </div>
     </nav>
 
+    <!-- Hero Section -->
     <section id="vision" class="relative bg-brandRed-700 pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden border-b border-brandRed-800">
         <div class="absolute top-0 left-0 w-96 h-96 bg-brandRed-800 rounded-full mix-blend-multiply filter blur-3xl opacity-50 transform -translate-x-1/2 -translate-y-1/2"></div>
         
@@ -119,6 +130,7 @@
         </div>
     </section>
 
+    <!-- Alignment Framework Matrix -->
     <section class="py-16 bg-brandRed-50 border-b border-brandRed-100 text-brandBlue-900">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-10 divide-y md:divide-y-0 md:divide-x md:rtl:divide-x-reverse divide-brandRed-200">
@@ -146,6 +158,7 @@
         </div>
     </section>
 
+    <!-- The Strategic 30-Study Roadmap -->
     <section id="roadmap" class="py-24 bg-white text-brandBlue-900">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16" data-aos="fade-up">
@@ -157,6 +170,7 @@
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Pillar 1 -->
                 <div class="bg-brandRed-50/50 p-8 border border-brandRed-100 hover:shadow-xl transition-all duration-300 group flex flex-col" data-aos="fade-up">
                     <div class="w-12 h-12 bg-brandRed-700 text-white flex items-center justify-center font-bold text-xl mb-6">01</div>
                     <h3 class="text-xl font-bold text-brandRed-800 mb-4">
@@ -173,6 +187,7 @@
                     </p>
                 </div>
 
+                <!-- Pillar 2 -->
                 <div class="bg-brandRed-50/50 p-8 border border-brandRed-100 hover:shadow-xl transition-all duration-300 group flex flex-col" data-aos="fade-up" data-aos-delay="150">
                     <div class="w-12 h-12 bg-brandRed-700 text-white flex items-center justify-center font-bold text-xl mb-6">02</div>
                     <h3 class="text-xl font-bold text-brandRed-800 mb-4">
@@ -189,6 +204,7 @@
                     </p>
                 </div>
 
+                <!-- Pillar 3 -->
                 <div class="bg-brandRed-50/50 p-8 border border-brandRed-100 hover:shadow-xl transition-all duration-300 group flex flex-col" data-aos="fade-up" data-aos-delay="300">
                     <div class="w-12 h-12 bg-brandRed-700 text-white flex items-center justify-center font-bold text-xl mb-6">03</div>
                     <h3 class="text-xl font-bold text-brandRed-800 mb-4">
@@ -208,6 +224,7 @@
         </div>
     </section>
 
+    <!-- Ultimate Transparency & Governance Pipeline -->
     <section id="pipeline" class="py-24 bg-brandRed-800 text-white relative">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="max-w-3xl mx-auto text-center mb-16" data-aos="fade-up">
@@ -221,6 +238,7 @@
                 </p>
             </div>
 
+            <!-- Loop Steps -->
             <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-16">
                 <div class="p-6 bg-brandRed-900/50 border border-brandRed-700 rounded text-center">
                     <span class="text-xs font-bold uppercase tracking-widest text-brandRed-100 block mb-2">01. ALLOCATION</span>
@@ -240,6 +258,7 @@
                 </div>
             </div>
 
+            <!-- Pipeline Features Table/List -->
             <div class="bg-brandRed-900 p-8 rounded border border-brandRed-700 max-w-4xl mx-auto" data-aos="zoom-in">
                 <div class="space-y-6">
                     <div class="flex items-start">
@@ -268,6 +287,7 @@
         </div>
     </section>
 
+    <!-- Integrated Governance & Leadership Profiles -->
     <section id="board" class="py-24 bg-white text-brandBlue-900">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="text-3xl font-bold text-brandRed-700 mb-16 text-center uppercase tracking-wider" data-aos="fade-up">
@@ -275,34 +295,51 @@
                 <span class="lang-ar hidden">الحوكمة المتكاملة والملفات القيادية</span>
             </h2>
 
-            <div class="bg-brandRed-50 border border-brandRed-100 p-8 rounded mb-12 max-w-4xl mx-auto text-start" data-aos="fade-up">
-                <span class="text-xs bg-brandRed-700 text-white font-bold px-3 py-1 uppercase tracking-widest rounded-sm inline-block mb-3">
-                    Lead Scientific Advisory & Scientific Board
-                </span>
-                <h3 class="text-2xl font-bold text-brandBlue-900">Prof. Dr. Malek Bajbouj</h3>
-                <p class="text-xs font-bold uppercase tracking-wide text-brandRed-700 mb-4">Honorary Director & Scientist, Head of Scientific Advisory Board</p>
-                <p class="text-sm leading-relaxed text-brandBlue-900 mb-4">
-                    The scientific anchor and senior advisor. Validates scientific processes and overviews the medical, psychiatric, neuroscientific, cultural & psychological research based on his thirty-year long expertise of research and practice in the psychiatry of migration and public health.
-                </p>
-                <p class="text-xs font-semibold border-t border-brandRed-200 pt-3 text-brandBlue-800">
-                    Currently the Head and Director of the Department of Psychiatry & Psychotherapy at the Charité-Campus Mitte in Berlin, Germany.
-                </p>
+            <!-- Advisory Head: Prof. Dr. Malek Bajbouj -->
+            <div class="bg-brandRed-50 border border-brandRed-100 p-8 rounded mb-8 max-w-4xl mx-auto text-start flex flex-col md:flex-row gap-8 items-center md:items-start" data-aos="fade-up">
+                <div class="flex-shrink-0">
+                    <img src="bajbouj.jpg" alt="Prof. Dr. Malek Bajbouj" class="w-48 h-48 rounded object-cover border-2 border-brandRed-200 shadow-sm">
+                </div>
+                <div>
+                    <span class="text-xs bg-brandRed-700 text-white font-bold px-3 py-1 uppercase tracking-widest rounded-sm inline-block mb-3">
+                        Lead Scientific Advisory & Scientific Board
+                    </span>
+                    <h3 class="text-2xl font-bold text-brandBlue-900">Prof. Dr. Malek Bajbouj</h3>
+                    <p class="text-xs font-bold uppercase tracking-wide text-brandRed-700 mb-4">Honorary Director & Scientist, Head of Scientific Advisory Board</p>
+                    <p class="text-sm leading-relaxed text-brandBlue-900 mb-4">
+                        The scientific anchor and senior advisor. Validates scientific processes and overviews the medical, psychiatric, neuroscientific, cultural & psychological research based on his thirty-year long expertise of research and practice in the psychiatry of migration and public health.
+                    </p>
+                    <p class="text-xs font-semibold border-t border-brandRed-200 pt-3 text-brandBlue-800">
+                        Currently the Head and Director of the Department of Psychiatry & Psychotherapy at the Charité-Campus Mitte in Berlin, Germany.
+                    </p>
+                </div>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto text-start">
-                
-                <div class="bg-white p-6 border border-brandRed-100 shadow-sm rounded flex flex-col justify-between" data-aos="fade-up" data-aos-delay="0">
-                    <div>
-                        <span class="text-xs font-bold text-brandRed-700 tracking-wider block mb-1">PSYCHOLOGY & NEURO</span>
-                        <h4 class="text-lg font-bold text-brandBlue-900 border-b border-brandRed-100 pb-2 mb-3">Mhd Alaa Eddin Al Tabbaa, M.Sc., M.Sc.</h4>
-                        <p class="text-xs font-bold uppercase text-brandRed-600 mb-3">Founder & Head of Lab, Lead Researcher</p>
-                        <p class="text-xs leading-relaxed text-brandBlue-900">
-                            Serves as the strategic architect and operational driving force. Directs psychological and neuroimaging analysis pipelines, cross-disciplinary data integration, and the centralized data architecture of the lab.
-                        </p>
-                    </div>
+            <!-- Founder: Mhd Alaa Eddin Al Tabbaa (Blue Theme, Same Size as Bajbouj) -->
+            <div class="bg-brandBlue-900 border border-brandBlue-800 p-8 rounded mb-12 max-w-4xl mx-auto text-start flex flex-col md:flex-row gap-8 items-center md:items-start" data-aos="fade-up" data-aos-delay="100">
+                <div class="flex-shrink-0">
+                    <img src="tabbaa.jpg" alt="Mhd Alaa Eddin Al Tabbaa" class="w-48 h-48 rounded object-cover border-2 border-brandBlue-800 shadow-lg">
                 </div>
+                <div class="text-white">
+                    <span class="text-xs bg-white text-brandBlue-900 font-bold px-3 py-1 uppercase tracking-widest rounded-sm inline-block mb-3">
+                        PSYCHOLOGY & NEURO
+                    </span>
+                    <h3 class="text-2xl font-bold text-white">Mhd Alaa Eddin Al Tabbaa, M.Sc., M.Sc.</h3>
+                    <p class="text-xs font-bold uppercase tracking-wide text-brandRed-100 mb-4">Founder & Head of Lab, Lead Researcher</p>
+                    <p class="text-sm leading-relaxed text-white/90">
+                        Serves as the strategic architect and operational driving force. Directs psychological and neuroimaging analysis pipelines, cross-disciplinary data integration, and the centralized data architecture of the lab.
+                    </p>
+                </div>
+            </div>
 
-                <div class="bg-white p-6 border border-brandRed-100 shadow-sm rounded flex flex-col justify-between" data-aos="fade-up" data-aos-delay="150">
+            <!-- Co-Founders Grid: Kalo & Kiwan -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto text-start">
+                
+                <!-- Profile: Ekrima Kalo -->
+                <div class="bg-white p-6 border border-brandRed-100 shadow-sm rounded flex flex-col sm:flex-row gap-6 items-center sm:items-start" data-aos="fade-up" data-aos-delay="200">
+                    <div class="flex-shrink-0">
+                        <img src="kcalo.png" alt="M.Sc. Ekrima Kalo" class="w-24 h-24 rounded-full object-cover border-2 border-brandRed-100 shadow-sm">
+                    </div>
                     <div>
                         <span class="text-xs font-bold text-brandRed-700 tracking-wider block mb-1">POLITICAL BEHAVIOR</span>
                         <h4 class="text-lg font-bold text-brandBlue-900 border-b border-brandRed-100 pb-2 mb-3">M.Sc. Ekrima Kalo</h4>
@@ -313,7 +350,11 @@
                     </div>
                 </div>
 
-                <div class="bg-white p-6 border border-brandRed-100 shadow-sm rounded flex flex-col justify-between" data-aos="fade-up" data-aos-delay="300">
+                <!-- Profile: Abdullah Kiwan -->
+                <div class="bg-white p-6 border border-brandRed-100 shadow-sm rounded flex flex-col sm:flex-row gap-6 items-center sm:items-start" data-aos="fade-up" data-aos-delay="300">
+                    <div class="flex-shrink-0">
+                        <img src="kiwan.png" alt="M.Sc. Abdullah Kiwan" class="w-24 h-24 rounded-full object-cover border-2 border-brandRed-100 shadow-sm">
+                    </div>
                     <div>
                         <span class="text-xs font-bold text-brandRed-700 tracking-wider block mb-1">ARTIFICIAL INTELLIGENCE</span>
                         <h4 class="text-lg font-bold text-brandBlue-900 border-b border-brandRed-100 pb-2 mb-3">M.Sc. Abdullah Kiwan</h4>
@@ -328,6 +369,7 @@
         </div>
     </section>
 
+    <!-- Contact Section -->
     <section id="contact" class="py-24 bg-brandRed-800 text-white relative">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center" data-aos="zoom-in">
             <h2 class="text-3xl font-bold mb-6">
@@ -408,6 +450,7 @@
         </script>
     </section>
 
+    <!-- Footer -->
     <footer class="bg-brandBlue-900 border-t border-brandRed-800 py-10 text-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center text-xs opacity-90 space-y-4 md:space-y-0 text-center md:text-start">
             <div class="leading-relaxed">
